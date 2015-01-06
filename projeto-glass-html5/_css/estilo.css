@@ -121,3 +121,26 @@ nav#menu a:hover {
 	color: white;
 	text-decoration: underline;
 }
+
+section#corpo {
+	display: block;
+	width: 570px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 20px;
+}
+
+aside#lateral {
+	display: block;
+	width: 300px;
+	float: right;
+}
+
+footer#rodape {
+	border-top: 1px solid #606060;
+	clear: both;
+}
+
+footer#rodape p{
+	text-align: center;
+}
