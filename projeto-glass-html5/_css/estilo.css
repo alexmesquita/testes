@@ -130,6 +130,43 @@ section#corpo {
 	padding-right: 20px;
 }
 
+table#tabelaSpec{
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaSpec caption{
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+table#tabelaSpec caption span{
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 8px;
+}
+
+table#tabelaSpec td{
+	border: 1px solid #606060;
+	padding: 10px;
+	vertical-align: top;
+}
+
+table#tabelaSpec td.esquerda{
+	text-align: right;
+	color: white;
+	background-color: #606060;
+	font-weight: bold;
+}
+table#tabelaSpec td.direita{
+	text-align: left;
+	background-color: #cecece;
+}
+
 aside#lateral {
 	display: block;
 	width: 300px;
