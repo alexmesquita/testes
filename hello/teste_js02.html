@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste JS</title>
+	<script>
+		function acendeLampada(){
+			document.getElementById('lampada').src = "../projeto-glass-html5/_imagens/lampada-acesa.jpg";
+		}
+
+		function apagaLampada(){
+			document.getElementById('lampada').src = "../projeto-glass-html5/_imagens/lampada-apagada.jpg";
+		}
+		
+		function quebraLampada(){
+			document.getElementById('lampada').src = "../projeto-glass-html5/_imagens/lampada-quebrada.jpg";
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Acenda a lâmpada </h1>
+	<img id="lampada" src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()" />
+</body>
+</html>
