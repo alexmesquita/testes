@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Teste JS</title>
+	<script>
+		var quebrada = false;
+		function mudaLampada(status){
+			if (!quebrada){
+				arquivo = "../projeto-glass-html5/_imagens/lampada-"+status+".jpg";
+				
+				if(status == "quebrada"){
+					quebrada = true;
+				}
+				document.getElementById('lampada').src = arquivo;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Acenda a lâmpada </h1>
+	<img id="lampada" src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" onmousemove="mudaLampada('acesa')" onmouseout="mudaLampada('apagada')" onclick="mudaLampada('quebrada')" />
+</body>
+</html>
