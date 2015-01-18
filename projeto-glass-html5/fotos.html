@@ -1,14 +1,54 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<title>Tudo sobre Google Class</title>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<body>
+	<div id="interface">
 
-[AQUI ENTRA UMA FOTO]
+	<!-- cabeçalho -->
+		<header id="cabecalho">
+			
+			<!-- para organizar um grupo de titulos -->
+			<hgroup>
+				<h1>Google Glass</h1>
+				<h2>A revolução do Google está chegando</h2>
+			</hgroup>
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+			<img src="_imagens/fotos.png" id="icone">
+
+			<nav id="menu">
+				<h1> Menu Principal </h1>
+
+				<!-- Lista não ordenada -->
+				<ul type="circule">
+
+				<!-- Lista ordenada -->
+				<!-- <ol type="1" start="3">  -->
+				<!-- alfabética: type="a", type="A" --- romana: type="i", type="I" -->
+					<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="index.html"> Home </a></li>
+					<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="index.html"> <a href="specs.html"> Especificações </a></li>
+					<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="index.html"> <a href="fotos.html"> Fotos </a></li>
+					<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="index.html"> <a href="multimidia.html"> Multimídia </a></li>
+					<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/fotos.png')"> <a href="index.html"> <a href="fale-conosco.html"> Fale conosco </a></li>
+				<!-- </ol> -->
+				</ul>
+			</nav>
+		</header>
+
+		<section id="corpo">
+		<article id="noticia-principal">
+			<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Tecnologia > Inovações</h3>
+				<h1>Saiba tudo sobre o Google Glass</h1>
+				<h2>por Gustavo Guanabara</h2>
+				<h3 class="direita">Atualizado em 23/Abril/2013</h3>
+			</hgroup>
+			</header>
 
 Glass > Fotos
 Galeria de Imagens do Google Glass
@@ -24,6 +64,11 @@ Veja na nossa galeria de fotos várias belas imagens que mostram algumas das pri
 - Vários tipos de lente
 - Informações importantes
 
-Copyright 2013 - by Gustavo Guanabara
-
-Facebook | Twitter
+<footer id="rodape">
+			<p>Copyright 2013 - by Gustavo Guanabara
+			<br/>
+			<a href="https://www.facebook.com/" target="blank"> Facebook </a> | <a href="https://twitter.com/?lang=pt" target="blank">Twitter</p>
+		</footer>
+	</div>
+</body>
+</html>
