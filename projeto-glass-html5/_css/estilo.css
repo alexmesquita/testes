@@ -142,8 +142,6 @@ section#corpo {
 
 section#corpo-full {
 	display: block;
-	float: left;
-	border-right: 1px solid #606060;
 	padding-right: 20px;
 }
 
