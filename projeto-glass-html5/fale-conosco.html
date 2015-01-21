@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
     <title>Tudo sobre Google Class</title>
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
@@ -39,51 +40,64 @@
             </nav>
         </header>
 
-        <section id="corpo">
+        <section id="corpo-full">
         <article id="noticia-principal">
             <header id="cabecalho-artigo">
             <hgroup>
-                <h3>Tecnologia > Inovações</h3>
-                <h1>Saiba tudo sobre o Google Glass</h1>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
                 <h2>por Gustavo Guanabara</h2>
-                <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+                <h3 class="direita">Atualizado em 01/Maio/2013</h3>
             </hgroup>
             </header>
 
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+            <form>
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                        <p><label for="cNome"> Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="20" placeholder="Nome Completo"/></p>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+                        <p><label for="cSenha"> Senha:</label> <input type="password" name="tSenha" id="cSenha" placeholder="8 Dígitos" maxlength="8" size="8"/></p>
+                        
+                        <p><label for="cMail"> E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="exemplo@exemplo.com"/></p>
+                        
+                        <fieldset id="sexo">
+                            <legend>Sexo</legend>
+                            <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label><br/>
+                            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem" >Feminino</label>
+                        </fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                        <p><label for="cNasc"> Data de Nascimento:</label> <input type="date" name="cNasc" id="tNasc"></p>
+                </fieldset>
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                        <p> <label for="">Logradouro: </label> <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Avendida, ..."></p>
+                        <p> <label for="">Número: </label> <input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder=""></p>
+                        <p> <label for="">Estado: </label> <input type="text" name="tEstado" id="cEstado" size="20" maxlength="20" placeholder=""></p>
+                        <p> <label for="">Cidade: </label> <input type="text" name="tCidade" id="cCidade" size="20" maxlength="20" placeholder="Município"></p>
+                </fieldset>
 
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                        <p>Grau de Urgência:</p>
+                        <p>Mensagem:</p>
+                </fieldset>
+
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                        Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                </fieldset>
 
 
-[BOTÃO ENVIAR]
+                [BOTÃO ENVIAR]
+        </form>
+    </article>
+    </section>
 
-<footer id="rodape">
+        <footer id="rodape">
             <p>Copyright 2013 - by Gustavo Guanabara
             <br/>
             <a href="https://www.facebook.com/" target="blank"> Facebook </a> | <a href="https://twitter.com/?lang=pt" target="blank">Twitter</p>
