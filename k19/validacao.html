@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercicio de validação</title>
+	</head>
+	<body>
+		<h1>Exercicio de validação</h1>
+
+		<form action="http://www.google.com.br" method="get">
+			<label for="nome_id">Nome:</label>
+			<input type="text" name="nome" id="nome_id" required >
+
+			<label for="email_id">Email:</label>
+			<input type="email" name="email" id="email_id">
+
+			<label for="site_id">Site:</label>
+			<input type="url" name="site" id="site_id">
+
+			<label for="placa_id">Placa:</label>
+			<input type="text" name="placa" id="placa_id"  pattern="[A-Z]{3}-[0-9]{4}" title="As placas são formadas por 3 letras e 4 números" placeholder="AAA-0000">
+
+			<input type="submit" name="" value="Enviar">
+		</form>
+	</body>
+</html>
