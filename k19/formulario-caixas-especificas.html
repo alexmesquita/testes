@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Exemplo de formulário com caixas específicas</title>
+	</head>
+	<body>
+		<h1>Exemplo de formulário com caixas específicas</h1>
+
+		<form action="" method="get">
+			<label for="keywords_is">Busca: </label>
+			<input id="keywords_is" type="search" name="keywords" placeholder="palavra chave">
+
+			<label for="idade_id">Idade: </label>
+			<input id="idade_id" type="number" name="idade" min="18" max="60">
+
+			<label for="curtiu_id">Curtiu: </label>
+			<input id="curtiu_id" type="range" name="curtiu" min="0" max="10">
+
+			<label for="email_id">Email: </label>
+			<input id="email_id" type="email" name="email" placeholder="seu email">
+
+			<label for="telefone_id">Telefone: </label>
+			<input id="telefone_id" type="tel" name="telefone" placeholder="seu telefone">
+
+			<label for="site_id">Site: </label>
+			<input id="site_id" type="url" name="site" placeholder="seu site">
+
+			<label for="nascimento_id">Nascimento: </label>
+			<input id="nascimento_id" type="date" name="nascimento">
+
+			<label for="festa_aniversario_id">Festa de aniversário: </label>
+			<input id="festa_aniversario_id" type="datetime-local" name="festa_aniversario">
+
+			<label for="proximo_carnaval_mes_id">Mes do proximo carnaval: </label>
+			<input id="proximo_carnaval_mes_id" type="month" name="proximo_carnaval_mes">
+
+			<label for="semana_rock_in_rio_id">Semana do Rock in Rio:</label>
+			<input id="semana_rock_in_rio_id" type="week" name="semana_rock_in_rio">
+
+			<label for="horario_entrada_id">Horário de entrada</label>
+			<input id="horario_entrada_id" type="time" name="horario_entrada_id">
+
+			<label for="senha_id">Senha: </label>
+			<input id="senha_id" type="password" name="senha_id" placeholder="Sua senha">
+
+			<label for="mensagem_id">Mensagem: </label>
+			<textarea id="mensagem_id" name="mensagem" rows="5" cols="50" maxlength="150"></textarea>
+		</form>
+	</body>
+</html>
